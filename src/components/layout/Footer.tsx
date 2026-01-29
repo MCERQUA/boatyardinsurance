@@ -52,18 +52,15 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Talaria Models */}
+          {/* Business Types */}
           <div>
-            <h3 className="font-semibold text-white mb-4">Talaria Models We Cover</h3>
+            <h3 className="font-semibold text-white mb-4">Marine Businesses We Insure</h3>
             <ul className="space-y-2">
-              {siteConfig.talariaModels.map((model) => (
-                <li key={model.name}>
-                  <span className="text-sm text-slate-400">{model.name}</span>
+              {siteConfig.businessTypes.map((business) => (
+                <li key={business.name}>
+                  <span className="text-sm text-slate-400">{business.name}</span>
                 </li>
               ))}
-              <li>
-                <span className="text-sm text-slate-400">All Other E-Bike Models</span>
-              </li>
             </ul>
           </div>
 
